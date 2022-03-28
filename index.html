@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fale Conosco</title>
+    <style>
+        label{
+            color:#c43;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+        input{
+            padding: 10px;
+            font-size: 18px;
+            font-family: "Arial";
+            margin: 5px;
+            width: 30%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fale Conosco</h1>
+
+    <form>
+        <table width="100%" border="1">
+            <tr>
+                <td width="30%">
+                    <label for="nomeAlu">
+                        Nome do Aluno
+                    </label>
+                </td>
+                <td width="70%">
+                    <input type="text" id="nomeAlu" name="nomeAlu" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dataNasc">
+                        Data de Nascimento
+                    </label>
+                </td>
+                <td>
+                    <input type="date" id="dataNasc" name="dataNasc" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sexoAlu">
+                        Sexo
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" value="M" id="sexoAlu" name="sexo" />Masculino<br/>
+                    <input type="radio" value="F" id="sexoAlu" name="sexo" />Feminino<br/>
+                    <input type="radio" value="O" id="sexoAlu" name="sexo" />Outros<br/>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nomeMaeAlu">
+                        Nome da Mãe
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="nomeMaeAlu" name="nomeMaeAlu" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nomePaiAlu">
+                        Nome do Pai
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="nomePaiAlu" name="nomePaiAlu" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telAlu">
+                        Telefone
+                    </label>
+                </td>
+                <td>
+                    <input type="tel" id="telAlu" name="telAlu" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="whatAlu">
+                        WhatsApp
+                    </label>
+                </td>
+                <td>
+                    <input type="checkbox" name="whatAlu" id="whatAlu" />Sim<br/>
+                    <input type="checkbox" name="whatAlu" id="whatAlu" />Não<br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="emailAlu">E-mail</label>
+                </td>
+                <td>
+                    <input type="email" name="emailAlu" id="emailAlu" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="senhaAlu">Senha</label>
+                </td>
+                <td>
+                    <input type="password" name="senhaAlu" id="senhaAlu" required />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nivelAlu">Nível de Acesso</label></td>
+                <td>
+                    <select name="nivelAlu">
+                        <option value="Monitor">Monitor</option>
+                        <option value="Lider">Líder de Sala</option>
+                        <option value="Aluno">Aluno</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
